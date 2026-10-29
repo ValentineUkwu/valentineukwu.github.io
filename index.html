@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyedikachi Valentine Ukwu | Cyber Security Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        cyber: {
+                            bg: '#0a0f16',
+                            card: '#111926',
+                            border: '#1e2d40',
+                            accent: '#10b981', // Emerald green
+                            accentHover: '#34d399',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar for dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0f16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e2d40;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #10b981;
+        }
+        /* Neon text shadow utility */
+        .text-glow {
+            text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-cyber-bg text-gray-300 font-sans antialiased overflow-x-hidden">
+
+    <!-- Fixed Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-cyber-bg/80 backdrop-blur-md border-b border-cyber-border transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#about" class="text-2xl font-bold font-mono text-white tracking-tighter">
+                        O_V<span class="text-cyber-accent text-glow">_U</span>
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-cyber-accent transition-colors font-medium">About</a>
+                    <a href="#projects" class="text-gray-300 hover:text-cyber-accent transition-colors font-medium">Projects</a>
+                    <a href="#skills" class="text-gray-300 hover:text-cyber-accent transition-colors font-medium">Skills</a>
+                    <a href="#experience" class="text-gray-300 hover:text-cyber-accent transition-colors font-medium">Experience</a>
+                    <a href="#contact" class="text-gray-300 hover:text-cyber-accent transition-colors font-medium">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-cyber-accent focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cyber-card border-b border-cyber-border">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-cyber-accent hover:bg-cyber-border/50 rounded-md">About</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-300 hover:text-cyber-accent hover:bg-cyber-border/50 rounded-md">Projects</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-300 hover:text-cyber-accent hover:bg-cyber-border/50 rounded-md">Skills</a>
+                <a href="#experience" class="block px-3 py-2 text-gray-300 hover:text-cyber-accent hover:bg-cyber-border/50 rounded-md">Experience</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-300 hover:text-cyber-accent hover:bg-cyber-border/50 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="pt-32 pb-20 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Intro Text -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-cyber-accent/10 border border-cyber-accent/20 px-3 py-1 rounded-full text-cyber-accent text-sm font-mono mb-4">
+                        <span class="relative flex h-3 w-3">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-accent opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-cyber-accent"></span>
+                        </span>
+                        <span>Seeking UK Internship</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                        Hi, I'm <span class="text-cyber-accent">Onyedikachi</span><br>Valentine Ukwu.
+                    </h1>
+                    <h2 class="text-xl md:text-2xl text-gray-400 font-medium">Cyber Security Student & Developer</h2>
+                    
+                    <p class="text-gray-400 text-lg leading-relaxed max-w-xl">
+                        I am a 2nd-year <strong class="text-gray-200">Computer Science for Cyber Security</strong> student at the University of Bradford. I combine Java/Python development, networking fundamentals, and system security practices to build resilient solutions. 
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed max-w-xl">
+                        My goal is to contribute from day one to ticket resolution, secure builds, and feature delivery while continually growing under mentorship.
+                    </p>
+
+                    <div class="pt-4 flex space-x-4">
+                        <a href="#projects" class="bg-cyber-accent text-black font-semibold px-8 py-3 rounded-md hover:bg-cyber-accentHover transition-colors duration-300 shadow-[0_0_15px_rgba(16,185,129,0.4)]">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="border border-cyber-border text-gray-300 font-semibold px-8 py-3 rounded-md hover:border-cyber-accent hover:text-cyber-accent transition-colors duration-300">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Terminal Visual -->
+                <div class="hidden lg:block relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyber-accent to-blue-600 rounded-xl blur opacity-20 animate-pulse"></div>
+                    <div class="relative bg-cyber-card border border-cyber-border rounded-xl p-6 shadow-2xl font-mono text-sm">
+                        <div class="flex space-x-2 mb-4 border-b border-cyber-border pb-4">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="space-y-2 text-gray-400">
+                            <p><span class="text-cyber-accent">user@kali:~$</span> whoami</p>
+                            <p class="text-gray-200">Onyedikachi Valentine Ukwu</p>
+                            
+                            <p class="pt-2"><span class="text-cyber-accent">user@kali:~$</span> cat education.txt</p>
+                            <p class="text-gray-200">BSc Computer Science for Cyber Security</p>
+                            <p class="text-gray-200">University of Bradford (2024-2027)</p>
+                            
+                            <p class="pt-2"><span class="text-cyber-accent">user@kali:~$</span> ./check_status.sh</p>
+                            <p class="text-emerald-400">[✓] Ready to deliver impact in real teams.</p>
+                            <p class="text-emerald-400">[✓] Actively seeking internship opportunities.</p>
+                            
+                            <p class="pt-2 animate-pulse"><span class="text-cyber-accent">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-cyber-card/30 border-y border-cyber-border/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-2 flex items-center gap-2">
+                <svg class="w-6 h-6 text-cyber-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                Featured Projects
+            </h2>
+            <div class="w-20 h-1 bg-cyber-accent rounded mb-12"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="group bg-cyber-card border border-cyber-border rounded-xl p-6 transition-all duration-300 hover:-translate-y-2 hover:border-cyber-accent hover:shadow-[0_0_20px_rgba(16,185,129,0.15)] flex flex-col h-full">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-white group-hover:text-cyber-accent transition-colors">AI Application Workflow</h3>
+                        <p class="text-sm font-mono text-gray-500 mt-1">2nd Year Project</p>
+                    </div>
+                    <p class="text-gray-400 mb-6 flex-grow">
+                        Built an end-to-end AI workflow for data preparation, model training, and evaluation. Deployed a lightweight API prototype optimized for latency and accuracy using iterative version control.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">Python</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">Flask</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">scikit-learn</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">Pandas</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-cyber-card border border-cyber-border rounded-xl p-6 transition-all duration-300 hover:-translate-y-2 hover:border-cyber-accent hover:shadow-[0_0_20px_rgba(16,185,129,0.15)] flex flex-col h-full">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-white group-hover:text-cyber-accent transition-colors">Java Calculator App</h3>
+                        <p class="text-sm font-mono text-gray-500 mt-1">1st Year Project</p>
+                    </div>
+                    <p class="text-gray-400 mb-6 flex-grow">
+                        Engineered a desktop calculator with clean Object-Oriented Programming (OOP) design, unit testing, and robust error handling. Packaged for reproducible builds.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">Java</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">Swing GUI</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">Maven</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">JUnit</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-cyber-card border border-cyber-border rounded-xl p-6 transition-all duration-300 hover:-translate-y-2 hover:border-cyber-accent hover:shadow-[0_0_20px_rgba(16,185,129,0.15)] flex flex-col h-full">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-white group-hover:text-cyber-accent transition-colors">Responsive Web Portfolio</h3>
+                        <p class="text-sm font-mono text-gray-500 mt-1">Independent Project</p>
+                    </div>
+                    <p class="text-gray-400 mb-6 flex-grow">
+                        Designed and built a responsive portfolio website with modular components, semantic markup, and SEO best practices. Validated performance via Lighthouse audits.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">HTML5</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">CSS/Tailwind</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">JavaScript</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">Git</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-2 flex items-center gap-2">
+                <svg class="w-6 h-6 text-cyber-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                Technical Capabilities
+            </h2>
+            <div class="w-20 h-1 bg-cyber-accent rounded mb-12"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Category 1 -->
+                <div class="bg-cyber-card border border-cyber-border rounded-xl p-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-3 bg-gray-800 rounded-lg text-cyber-accent">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Programming</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Python (Scapy, Pyshark)</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Java (JDBC, Swing)</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Bash & Shell Scripting</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>JavaScript / HTML / CSS</li>
+                    </ul>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-cyber-card border border-cyber-border rounded-xl p-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-3 bg-gray-800 rounded-lg text-cyber-accent">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Networking & Security</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Wireshark & TCP/IP</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Nmap & Port Scanning</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Access Control & Logging</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Config Baselines & Patching</li>
+                    </ul>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="bg-cyber-card border border-cyber-border rounded-xl p-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-3 bg-gray-800 rounded-lg text-cyber-accent">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Systems & Admin</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Linux Fundamentals</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Windows Environments</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>MySQL & phpMyAdmin</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-cyber-accent"></span>Active Directory Basics</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-cyber-card/30 border-y border-cyber-border/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-2 flex items-center gap-2">
+                <svg class="w-6 h-6 text-cyber-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                Professional Experience
+            </h2>
+            <div class="w-20 h-1 bg-cyber-accent rounded mb-12"></div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[2.2rem] before:h-full before:w-0.5 before:bg-gradient-to-b before:from-cyber-accent before:via-cyber-border before:to-transparent">
+                
+                <!-- Role 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <!-- Marker -->
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cyber-bg bg-cyber-card shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-colors group-hover:border-cyber-accent">
+                        <div class="w-2 h-2 rounded-full bg-cyber-accent"></div>
+                    </div>
+                    <!-- Content -->
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-cyber-card border border-cyber-border p-6 rounded-xl shadow-lg transition-transform hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                            <h3 class="font-bold text-white text-lg">Retail Assistant</h3>
+                            <span class="text-cyber-accent font-mono text-sm">2024 - Present</span>
+                        </div>
+                        <h4 class="text-gray-400 font-medium mb-3">Tesco (Indeed Flex Agency)</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Maintained accurate stock levels using handheld scanners and database tools. Supported customer service resolution and managed self-checkout areas efficiently under high-pressure retail environments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cyber-bg bg-cyber-card shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-colors group-hover:border-cyber-accent">
+                        <div class="w-2 h-2 rounded-full bg-cyber-accent"></div>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-cyber-card border border-cyber-border p-6 rounded-xl shadow-lg transition-transform hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                            <h3 class="font-bold text-white text-lg">Junior IT Technician</h3>
+                            <span class="text-cyber-accent font-mono text-sm">2020 - 2024</span>
+                        </div>
+                        <h4 class="text-gray-400 font-medium mb-3">Henrich Gold Global Concept</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Resolved first-contact tickets for hardware, software, and connectivity issues. Handled device configuration, managed user access tasks following least-privilege principles, and maintained clear helpdesk documentation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-cyber-bg bg-cyber-card shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-colors group-hover:border-cyber-accent">
+                        <div class="w-2 h-2 rounded-full bg-cyber-accent"></div>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-cyber-card border border-cyber-border p-6 rounded-xl shadow-lg transition-transform hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                            <h3 class="font-bold text-white text-lg">Teaching Assistant</h3>
+                            <span class="text-cyber-accent font-mono text-sm">2018 - 2019</span>
+                        </div>
+                        <h4 class="text-gray-400 font-medium mb-3">Peace Academy, China</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Supported classroom instruction, reinforced positive learning environments, and monitored pupil progress. Adapted teaching activities to meet specific individual needs in an international setting.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-2 flex items-center gap-2">
+                <svg class="w-6 h-6 text-cyber-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                Establish Connection
+            </h2>
+            <div class="w-20 h-1 bg-cyber-accent rounded mb-12"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        I am currently looking for an internship opportunity in the UK where I can apply my skills and grow within a professional team. If you have an open position or want to discuss technology, my inbox is always open.
+                    </p>
+                    
+                    <div class="flex flex-col gap-6 mt-8">
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-cyber-card border border-cyber-border rounded-lg flex items-center justify-center text-cyber-accent group-hover:bg-cyber-accent group-hover:text-black transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-mono">Email Address</p>
+                                <a href="mailto:blazenda007@gmail.com" class="text-lg text-gray-300 hover:text-cyber-accent transition-colors font-medium">blazenda007@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-cyber-card border border-cyber-border rounded-lg flex items-center justify-center text-cyber-accent group-hover:bg-cyber-accent group-hover:text-black transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-mono">Phone Number</p>
+                                <a href="tel:07551115896" class="text-lg text-gray-300 hover:text-cyber-accent transition-colors font-medium">07551115896</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-cyber-card border border-cyber-border rounded-lg flex items-center justify-center text-cyber-accent group-hover:bg-cyber-accent group-hover:text-black transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-mono">Location</p>
+                                <p class="text-lg text-gray-300 font-medium">Bradford, United Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-cyber-card border border-cyber-border p-8 rounded-xl shadow-lg relative">
+                    <!-- Notification box (hidden by default) -->
+                    <div id="form-message" class="hidden absolute top-4 left-1/2 transform -translate-x-1/2 bg-cyber-accent text-black font-semibold px-4 py-2 rounded shadow-lg w-[90%] text-center z-10 transition-opacity">
+                        Message sent successfully! (Demo)
+                    </div>
+
+                    <form id="contact-form" class="space-y-6 mt-4">
+                        <div>
+                            <label for="name" class="block text-sm font-mono text-gray-400 mb-2">Name</label>
+                            <input type="text" id="name" required class="w-full bg-cyber-bg border border-cyber-border rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-cyber-accent transition-colors" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-mono text-gray-400 mb-2">Email</label>
+                            <input type="email" id="email" required class="w-full bg-cyber-bg border border-cyber-border rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-cyber-accent transition-colors" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-mono text-gray-400 mb-2">Message</label>
+                            <textarea id="message" rows="4" required class="w-full bg-cyber-bg border border-cyber-border rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-cyber-accent transition-colors resize-none" placeholder="Hello, I'd like to discuss..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-cyber-accent text-black font-bold py-3 px-4 rounded-lg hover:bg-cyber-accentHover transition-colors duration-300 shadow-[0_0_10px_rgba(16,185,129,0.3)]">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-cyber-border/50 bg-cyber-card py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-gray-500 font-mono text-sm">
+                &copy; <span id="year"></span> Onyedikachi Valentine Ukwu. Built with <span class="text-cyber-accent">HTML & Tailwind CSS</span>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Update Footer Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Form submission handling (Dummy functionality without alert)
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent page reload
+            
+            // Show custom message notification instead of alert()
+            formMessage.classList.remove('hidden');
+            
+            // Reset form fields
+            contactForm.reset();
+            
+            // Hide message after 3 seconds
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
